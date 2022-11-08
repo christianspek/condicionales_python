@@ -13,9 +13,11 @@
 # Objetivo:
 # Ingrese dos palabras cualesquiera
 # y realice las sigueintes comparaciones entre ellas
-texto_1 = str(input('Ingrese la primera palabra:\n'))
 
+texto_1 = str(input('Ingrese la primera palabra:\n'))
+texto_1 = "sabado"
 texto_2 = str(input('Ingrese la segunda palabra:\n'))
+texto_2 = "lunes"
 
 # Alumno
 # En cada desafio se le indicará que dada cierta condición
@@ -29,6 +31,10 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 
 # Imprimir en pantalla la variable res_1
+if texto_1 > texto_2 :
+    print ("1")
+else :
+    print ("2")
 
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
@@ -40,9 +46,22 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 # Imprimir en pantalla la variable res_2
 
+if len (texto_1) > len (texto_2) :
+    print ("1")
+elif len (texto_1) < len (texto_2) :
+    print ("2")
+else : 
+    print ("3")  
+ 
 
 
-# Verifique si la primera letra de la primera palabra
+
+
+
+
+
+
+# Verifique  si la primera letra de la primera palabra
 # es mayor a la primera letra de la segunda palabra
 # - Si la primera letra de texto_1 es mayor,
 #   almacenar 1 en res_3
@@ -51,3 +70,6 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 # Imprimir en pantalla la variable res_3
 
+if texto_1 [0] > texto_2 [0] :    print ("1")
+else :
+    print ("2")    

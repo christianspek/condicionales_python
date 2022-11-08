@@ -13,9 +13,13 @@
 # Objetivo:
 # Ingrese dos números enteros cualesquiera
 # y realice las siguientes comparaciones entre ellos
-numero_1 = int(input('Ingrese el primer número:\n'))
 
+from contextlib import nullcontext
+
+numero_1 = int(input('Ingrese el primer número:\n'))
+numero_1 = 5
 numero_2 = int(input('Ingrese el segundo número:\n'))
+numero_2 = 4
 
 # Alumno
 # En cada desafio se le indicará que dada cierta condición
@@ -27,7 +31,15 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 # - De lo contrario, almacenar 2 en res_1
 res_1 = 0
 
-# Imprimir en pantalla la variable res_1
+if numero_1 > numero_2 :
+    print ("1")
+else : 
+    print ("2")    
+
+
+
+
+# Imprimir en pant alla la variable res_1
 
 # Verifique si el numero_1 positivo, negativo o cero
 # Utilice if, elif y else
@@ -37,7 +49,12 @@ res_1 = 0
 res_2 = 0
 
 # Imprimir en pantalla la variable res_2
-
+if numero_1 > 0 :
+    print ("1")
+elif numero_1 > 0 :
+    print ("2")
+else :
+    print ("3")    
 
 # Verifique si el numero_1 es mayor a 0 y menor a 100
 # Utilice un if con un condicional compuesto
@@ -46,6 +63,11 @@ res_2 = 0
 res_3 = 0
 
 # Imprimir en pantalla la variable res_3
+#if numero_1 > 0 and numero_1 < 100 :
+if numero_1 > 0 and numero_1 < 100 :   
+    print ("1")
+else :
+    print ("2")
 
 
 # Verifique si:
@@ -56,3 +78,8 @@ res_3 = 0
 res_4 = 0
 
 # Imprimir en pantalla la variable res_4
+
+if numero_1 > 10 or numero_2 > -2 :
+    print ("1")
+else :
+    print ("2")
